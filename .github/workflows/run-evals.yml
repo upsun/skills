@@ -38,6 +38,11 @@ jobs:
         curl -fsSL https://claude.ai/install.sh | bash
         echo "$HOME/.local/bin" >> $GITHUB_PATH
     
+    - name: Install Upsun CLI
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | VENDOR=upsun bash
+        echo "$HOME/.platformsh/bin" >> $GITHUB_PATH
+    
     - name: Install using-upsun skill
       run: |
         mkdir -p "$HOME/.claude/skills/"
