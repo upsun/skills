@@ -1,0 +1,7 @@
+.python-version
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.deepeval/
