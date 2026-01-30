@@ -34,7 +34,7 @@ jobs:
     
     - name: Install Claude Code
       run: |
-        curl -fsSL https://raw.githubusercontent.com/anthropics/anthropic-sdk-typescript/main/packages/cli/install.sh | sh
+        curl -fsSL https://claude.ai/install.sh | bash
         echo "$HOME/.local/bin" >> $GITHUB_PATH
     
     - name: Install using-upsun skill
