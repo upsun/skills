@@ -1,15 +1,7 @@
 import subprocess
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 from deepeval.metrics import GEval
-from deepeval.models import GeminiModel
 from deepeval import assert_test
-
-model = GeminiModel(
-    model="gemini-2.5-pro",
-    project="vertex-476111",
-    location="global",
-    temperature=0
-)
 
 def run_claude_code(prompt):
   """Execute Claude Code CLI and capture output"""
@@ -28,7 +20,6 @@ def test_upsun_login():
   # Create correctness metric
   correctness_metric = GEval(
     name="Correctness",
-    model=model,
     evaluation_params=[LLMTestCaseParams.ACTUAL_OUTPUT, LLMTestCaseParams.EXPECTED_OUTPUT],
     evaluation_steps=[
       "Check if the actual output correctly identifies that the user is not logged in to Upsun",
