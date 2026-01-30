@@ -25,6 +25,7 @@ jobs:
       uses: astral-sh/setup-uv@v5
     
     - name: Authenticate to Google Cloud
+      id: auth
       uses: google-github-actions/auth@v2
       with:
         credentials_json: ${{ secrets.GCP_CREDENTIALS }}
