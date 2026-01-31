@@ -157,20 +157,19 @@ The skill activates automatically when you mention Upsun-related tasks:
 
 ### Documentation
 
-- **[SKILL.md](SKILL.md)** - Main skill navigation and quick reference
-- **[CLAUDE.md](CLAUDE.md)** - Development guide for contributing
-- **[references/](references/)** - Detailed command documentation
-  - [COMMAND-INDEX.md](references/COMMAND-INDEX.md) - Alphabetical command reference
-  - [environments.md](references/environments.md) - Environment lifecycle
-  - [deployments.md](references/deployments.md) - Deployment patterns
-  - [backups.md](references/backups.md) - Backup/restore procedures
-  - [services-databases.md](references/services-databases.md) - Database operations
-  - [resources-scaling.md](references/resources-scaling.md) - Resource management
-  - [access-security.md](references/access-security.md) - Security and access control
-  - [integration-variables.md](references/integration-variables.md) - Configuration
-  - [development-tools.md](references/development-tools.md) - Developer tools
-  - [projects-organizations.md](references/projects-organizations.md) - Project management
-  - [troubleshooting.md](references/troubleshooting.md) - Common issues
+- **[SKILL.md](skills/using-upsun/SKILL.md)** - Main skill navigation and quick reference
+- **[references/](skills/using-upsun/references/)** - Detailed command documentation
+  - [COMMAND-INDEX.md](skills/using-upsun/references/COMMAND-INDEX.md) - Alphabetical command reference
+  - [environments.md](skills/using-upsun/references/environments.md) - Environment lifecycle
+  - [deployments.md](skills/using-upsun/references/deployments.md) - Deployment patterns
+  - [backups.md](skills/using-upsun/references/backups.md) - Backup/restore procedures
+  - [services-databases.md](skills/using-upsun/references/services-databases.md) - Database operations
+  - [resources-scaling.md](skills/using-upsun/references/resources-scaling.md) - Resource management
+  - [access-security.md](skills/using-upsun/references/access-security.md) - Security and access control
+  - [integration-variables.md](skills/using-upsun/references/integration-variables.md) - Configuration
+  - [development-tools.md](skills/using-upsun/references/development-tools.md) - Developer tools
+  - [projects-organizations.md](skills/using-upsun/references/projects-organizations.md) - Project management
+  - [troubleshooting.md](skills/using-upsun/references/troubleshooting.md) - Common issues
 
 ### Architecture
 
@@ -181,11 +180,7 @@ This skill uses a progressive disclosure architecture:
 
 This design minimizes context usage while providing comprehensive coverage.
 
-### Contributing
-
-Contributions are welcome! See [CLAUDE.md](CLAUDE.md) for development guidelines.
-
-#### Adding Documentation
+### Adding Documentation
 
 1. Update existing reference files in `references/`
 2. Add cross-references to related documents
